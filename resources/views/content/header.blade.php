@@ -2,12 +2,19 @@
     <div class="header__menu">
         <div class="container">
             <div class="header__logo">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/cms-logo-png-transparent.png" />
+                <h3>ellukasion</h3>
             </div>
         </div>
     </div>
     <div class="header__banner">
-        <h2>Łukasz Fujarski</h2>
-        <h1>Full Stack Webdeveloper</h1>
+        <div class="container">
+            <h2>Łukasz Fujarski</h2>
+            <h1>Full Stack Webdeveloper</h1>
+            <h3>Twórca czystych, przydatnych aplikacji dla cyfrowego świata.</h3>
+
+            <a class="header__link" href="https://github.com/lukasion" target="_blank">
+                <img src="{{ asset('images/github.png') }}" />
+            </a>
+        </div>
     </div>
 </header>

@@ -1,0 +1,10 @@
+.box {
+
+    &--small {
+        @include size($width: 800px);
+
+        @include media('<=1024px') { 
+            @include size($width: 100%);
+        }
+    }
+}

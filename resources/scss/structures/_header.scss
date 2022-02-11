@@ -1,12 +1,83 @@
 .header {
     &__logo {
-        img {
-            width: 200px;
+        h3 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
         }
     }
 
     &__menu {
+        @include fixed();
+        z-index: 3;
+        width: 100%;
+        background-color: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         padding: 15px 0;
+    }
+
+    &__banner {
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include relative();
+
+        background: rgb(4,27,129);
+        background: linear-gradient(149deg, rgba(4,27,129,1) 0%, rgba(1,21,71,1) 51%, rgba(68,8,132,1) 100%, rgba(68,8,132,1) 100%);
+        color: #efefef;
+        min-height: 80vh;
+        max-height: 800px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: url('https://wallpaperaccess.com/full/1657858.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        h2, h1 {
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 52px;
+        }
+
+        h1 {
+            margin-top: 0px;
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 25px;
+        transition: 0.3s ease transform;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 }
