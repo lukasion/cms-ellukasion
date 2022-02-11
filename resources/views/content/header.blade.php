@@ -7,6 +7,7 @@
         </div>
     </div>
     <div class="header__banner">
-        <img src="" />
+        <h2>Łukasz Fujarski</h2>
+        <h1>Full Stack Webdeveloper</h1>
     </div>
 </header>
